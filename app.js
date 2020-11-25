@@ -70,9 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  //make the tetraminoes move down every second
-  //timerId = setInterval (moveDown, 1000)
-
   //assign functions to keyCodes
   function control(e) {
     if(e.keyCode === 37) {
@@ -158,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //show up-next tetromino in mini-grid ScoreDisplay
   const displaySquares = document.querySelectorAll('.mini-grid div')
   const displayWidth = 4
-  let displayIndex = 0
+  const displayIndex = 0
 
   //the Tetrominoes without rotations
   const upNextTetrominoes = [
